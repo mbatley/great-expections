@@ -6,8 +6,7 @@ from great_expectations_provider.operators.great_expectations import (
     GreatExpectationsOperator,
 )
 
-default_args = {"owner": "Airflow",
-                "start_date": airflow.utils.dates.days_ago(1)}
+default_args = {"owner": "Airflow", "start_date": airflow.utils.dates.days_ago(1)}
 
 dag = airflow.DAG(
     dag_id="sample_dag",
